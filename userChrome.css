@@ -204,13 +204,12 @@ background-color: var(--firefoxcss-item-bg-color) !important;
 /* hide tab bar if only one tab */
 #tabbrowser-tabs .tabbrowser-tab:only-of-type,
 #tabbrowser-tabs .tabbrowser-tab:only-of-type + #tabbrowser-arrowscrollbox-periphery,
-#tabbrowser-tabs:not([overflow="true"]) ~ #alltabs-button,
-#back-button,
+#tabbrowser-tabs:not([overflow="true"]) ~ #alltabs-button
+/*,#back-button,
 #forward-button,
 .tabbrowser-tab .tab-close-button,
 #tabs-newtab-button,
-.urlbar-go-button,
-.searchbar-search-button {
+.urlbar-go-button */ {
   display: none !important;
 }
 
@@ -293,6 +292,7 @@ menugroup > #context-forward,
   list-style-image: url(blur_chrome/assets/right-arrow.svg) !important;
 }
 
+#back-button,
 menugroup > #context-back {
   list-style-image: url(blur_chrome/assets/left-arrow.svg) !important;
 }
